@@ -7,6 +7,7 @@ html,
 body {
   color: rgb(216, 216, 210);
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 /* Topografy */
 h1 {
@@ -16,6 +17,7 @@ h1 {
 h2{
     font-size: 2rem;
     font-weight: 300;
+    padding: 1.5rem 0;
 }
 h3 {
   text-align: right;
@@ -23,6 +25,9 @@ h3 {
   padding: 1.5rem 0;
   font-weight: 300;
   text-transform: uppercase;
+}
+a{
+    color: rgb(216, 216, 216);
 }
 .container {
   background-image: url(./images/services2.jpg);
@@ -32,15 +37,19 @@ h3 {
   background-color: rgba(14, 14, 15, 0.551);
   background-blend-mode: multiply;
 }
-.splash {
-  height: 100vh;
-}
+
 .splash-text {
-    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 8rem;
     padding: 4rem 0;
   }
+.splash{
+  
+}
 .card-container {
-  height: 100vh;
+ height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -53,6 +62,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  
 }
 
 .image {
@@ -68,7 +78,7 @@ h3 {
  padding: 5rem;
 }
 .content-text{
-    padding: 4rem 0;
+    padding: 2rem 0;
     color: rgb(88, 88, 88);
     font-weight: 300;
     line-height: 2rem;
@@ -77,10 +87,26 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(88, 88, 88);
 }
 .card-image img{
      width: 100%;
-   
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.icon-text{
+    padding: 1rem;
+}
+.card-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: rgb(88, 88, 88);
 }
 @media screen and (max-width: 1280px) {
     .container{
@@ -97,6 +123,10 @@ h3 {
     .image
     {
         justify-content: center;
+    
+    }
+    .text{
+        
     }
     .card-content{
         padding: 1.5rem;
@@ -107,4 +137,13 @@ h3 {
     h3{
         font-size: 1.3rem;
     }
+    .card-image img{
+        width: 85%;
+   }
+  }
+  @media screen and (max-width: 640px){
+.card-icons{
+    flex-direction: column;
+    align-items: flex-start;
+}
   }
