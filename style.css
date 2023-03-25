@@ -5,30 +5,40 @@
 
 html,
 body {
-  color: beige;
+  color: rgb(216, 216, 210);
+  font-family: "Poppins", sans-serif;
 }
 /* Topografy */
 h1 {
   font-size: 5rem;
+  font-weight: 500;
 }
 h3 {
   text-align: right;
   font-size: 1.6rem;
   padding: 1.5rem 0;
+  font-weight: 300;
   text-transform: uppercase;
 }
 .container {
-  background-image: url(./images/cool-background.png);
+  background-image: url(./images/services2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  background-color: rgba(51, 59, 52, 0.6);
+  background-blend-mode: multiply;
 }
 .splash {
   height: 100vh;
 }
 .card-container {
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 1240px) {
+  .card-container {
+    flex-direction: column;
+  }
 }
 .card {
   background-color: aliceblue;
@@ -38,11 +48,16 @@ h3 {
   height: 100vh;
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+}
+.splash-text {
+    margin-right: 8rem;
 }
 .image {
   background-image: url(./images/splach.jpg);
   background-position: center;
   background-size: cover;
+  background-color: rgba(41, 39, 36, 0.5);
+  background-blend-mode: multiply;
 }
